@@ -1,14 +1,84 @@
 <!doctype html>
-<html lang="en">
+<html lang="pt-BR">
   <head>
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Meu Portifolio
-    </title>
+    
+    <meta name="description" content="Portfólio de Samuel Augusto - Desenvolvedor Front-end com foco em React, interfaces modernas e experiências humanas." />
+    <meta name="author" content="Samuel Augusto Galvão Francisco" />
+
+    <title>Samuel Augusto | Meu Portfólio</title>
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet" />
+
+    <!-- Estilos Visuais -->
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: 'Inter', sans-serif;
+        background: linear-gradient(135deg, #f5f7fa, #e4ecf3);
+        color: #222;
+        line-height: 1.6;
+        padding: 2rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        min-height: 100vh;
+      }
+
+      h1 {
+        font-size: 2.5rem;
+        color: #0077cc;
+        margin-bottom: 0.5rem;
+      }
+
+      h3 {
+        font-weight: 400;
+        color: #666;
+        margin-bottom: 2rem;
+      }
+
+      .quote {
+        font-style: italic;
+        color: #999;
+        margin-top: 2rem;
+        text-align: center;
+      }
+
+      footer {
+        margin-top: auto;
+        font-size: 0.9rem;
+        color: #888;
+        padding: 1rem;
+      }
+    </style>
   </head>
+
   <body>
-    <h1>Meu Portifolio</h1>
-    <h3> h</h3>
-  </body> 
+    <h1>Samuel Augusto</h1>
+    <h3>Desenvolvedor Front-End apaixonado por interfaces limpas e eficientes.</h3>
+
+    <p>Bem-vindo ao meu portfólio! Aqui compartilho meus projetos, experiências e formas de contato.</p>
+
+    <div class="quote">“Código é poesia em forma de lógica.”</div>
+
+    <footer>
+      &copy; <span id="year"></span> Samuel Augusto. Todos os direitos reservados.
+    </footer>
+
+    <script>
+      document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
+
+    <!-- Importa React + Vite -->
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
 </html>
